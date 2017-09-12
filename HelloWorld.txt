@@ -1,3 +1,4 @@
 Hello Git!
 Ik ben Kenneth Van Gijsel.
 Nieuwe lijn!
+Nog een nieuwe lijn!
