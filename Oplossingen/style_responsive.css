@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body, #main ul, #main li, h1{
+	margin:0;
+	padding:0;
+	color:white;
+	font-style:oblique;
+}
+
+body{
+	background:#000080;
+}
+
+#container {
+	font-family:Verdana, Geneva, sans-serif;
+	
+	margin:0 10px;
+}
+
+header, footer {
+	display:block;
+}
+
+#main li {
+	list-style:none;
+	height:40px;
+	background:#FFBF00;
+	margin-bottom:0.5em;
+	line-height:40px;
+	border-radius:15px;
+	
+}
+
+#main li a{
+	color:white;
+	text-decoration:none;
+	margin-left:1em;	
+}
