@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Functions</title>
+<script>
+/*    function calculateBmi(w, h) {
+      return w / (h * h);
+   }
+ */
+ 
+   var calculateBmi = function(w, h) {
+	      return w / (h * h);	   
+   }
+   
+   var weight = prompt("Geef je gewicht (kg):", "");
+   var height = prompt("Geef je grootte (m):", "");
+   var bmi = calculateBmi(weight, height);
+   var result = "";
+   if (bmi < 18) {
+      result = "ondergewicht";
+   } else if (bmi < 25) {
+      result = "normaal";
+   } else if (bmi < 27) {
+      result = "licht overgewicht";
+   } else if (bmi < 30) {
+      result = "matig overgewicht";
+   } else if (bmi <= 40) {
+      result = "ernstig overgewicht";
+   } else if (bmi > 40) {
+      result = "ziekelijk overgewicht";
+   }
+   
+   console.log("Diagnose: " + result);
+</script>
+</head>
+<body>
+   <h1>Functions</h1>
+</body>
+</html>

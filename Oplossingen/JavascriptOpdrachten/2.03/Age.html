@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Age</title>
+<script>
+   var age;
+   do {
+      age = prompt("Geef je leeftijd (tussen 0 en 150):", "");
+   } while ((age != null) && !((age > 0) && (age < 150) ));   
+
+   console.log((age != null) ? "Leeftijd: " + age : "Geannuleerd");
+</script>
+</head>
+<body>
+   <h1>Age</h1>
+</body>
+</html>

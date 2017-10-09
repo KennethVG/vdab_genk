@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Argument List</title>
+<script>
+   function average() {
+      var total = 0;
+      for (var i in arguments) {
+         total += arguments[i];
+      }
+      return total / arguments.length;
+   }
+
+   var avg = average(5, 7, 9, 3, 2);
+
+   console.log("Gemiddelde: " + avg);
+</script>
+</head>
+<body>
+   <h1>Argument List</h1>
+</body>
+</html>
