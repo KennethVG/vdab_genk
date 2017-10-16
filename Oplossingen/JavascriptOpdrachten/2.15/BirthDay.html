@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Birthday</title>
+<script>
+   var days = [ "zondag", "maandag", "dinsdag", "woensdag", "donderdag",
+         "vrijdag", "zaterdag" ];
+   var answer = prompt("Geef je geboortedatum: ", "jjjj-mm-dd");
+   var birthday = new Date(answer);
+   console.log("Dit was een " + days[birthday.getDay()]);
+</script>
+</head>
+<body>
+   <h1>Birthday</h1>
+</body>
+</html>

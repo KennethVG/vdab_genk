@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Person object</title>
+<script>
+   function Person(firstName, lastName, birthday, email) {
+      this.firstName = firstName || "Unknown";
+      this.lastName = lastName || "Unknown";
+      this.birthday = birthday || new Date();
+      this.email = email || "Unknown";
+   }
+
+   Person.prototype = {
+      getAge : function() {
+         var now = new Date();
+         var age = now.getFullYear() - this.birthday.getFullYear();
+         return age;
+      }
+   };
+
+   var person = new Person("Noel", "Vaes", new Date(1967, 5, 2),
+         "noel@noelvaes.eu");
+   console.log("Hello " + person.firstName + " " + person.lastName);
+   console.log("You are " + person.getAge() + " years old");
+</script>
+</head>
+<body>
+   <h1>Person object</h1>
+</body>
+</html>

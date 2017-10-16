@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lotto</title>
+<script>
+	function contains(array, value) {
+		for (var i of array) {
+			if (i == value)
+				return true;
+		}
+		return false;
+	}
+
+	var numbers = new Array(6);
+	for (var i = 0; i < numbers.length;) {
+		var rand = Math.round(1 + (Math.random() * 41));
+		if (!contains(numbers, rand))
+			numbers[i++] = rand;
+	}
+
+	numbers.sort(function(a, b) {
+		return a - b;
+	});
+	
+	for ( var i = 0; i < numbers.length; i++) {
+		console.log(numbers[i]);
+	}
+</script>
+</head>
+<body>
+	<h1>Lotto</h1>
+</body>
+</html>
